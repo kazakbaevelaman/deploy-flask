@@ -36,5 +36,5 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
-    -name: Deploy to GKE 
-     run: helm install hello ./hello  
+    - name: Deploy to GKE 
+      run: helm install hello ./hello  
